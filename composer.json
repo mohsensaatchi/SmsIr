@@ -1,0 +1,37 @@
+{
+    "name": "mohsensaatchi/smsir",
+    "description": "Unofficial sms.ir Laravel Package",
+    "homepage": "https://github.com/mohsensaatchi/smsir",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohsen Saatchi",
+            "email": "admin@mohsensaatchi.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "MohsenSaatchi\\SmsIr\\": "src"
+        }
+      },
+      "autoload-dev": {
+        "psr-4": {
+          "MohsenSaatchi\\SmsIr\\Tests\\": "tests"
+        }
+      },
+      "extra": {
+        "laravel": {
+            "providers": [
+                "MohsenSaatchi\\SmsIr\\SmsIrServiceProvider"
+            ],
+            "aliases": {
+                "SmsIr": "MohsenSaatchi\\SmsIr\\Facades\\SmsIr"
+            }
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    }
+}
